@@ -27,7 +27,7 @@ public class MerkleManager {
 
         while (true) {
 
-            MerkleManager.userEnteredWord = Util.promptUser("Enter the word: "); //need prompt user method in Util
+            MerkleManager.userEnteredWord = Util.promptUser("Enter the word here: "); //need prompt user method in Util
         }
     }
 
