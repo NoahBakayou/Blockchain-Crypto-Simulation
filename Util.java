@@ -1,24 +1,22 @@
+import javax.swing.*;
 import java.util.ArrayList;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.SecureRandom;
+import javax.swing.JOptionPane;
 
 public class Util {
 
     public String getMerkleRoot(ArrayList<String> lstItems){
 
-        // Hard Code tree input to 4 items.
-        //4 leafs
+        // Hard code tree input to 4 items.
         MerkleNode oNode1 = new MerkleNode();
         MerkleNode oNode2 = new MerkleNode();
         MerkleNode oNode3 = new MerkleNode();
         MerkleNode oNode4 = new MerkleNode();
-        //2 parent trees
         MerkleNode oNode5 = new MerkleNode();
         MerkleNode oNode6 = new MerkleNode();
-        //root
         MerkleNode oNode7 = new MerkleNode();
-
 
         // Build merkle tree to get merkle root.
         oNode1.sHash = generateHash(lstItems.get(0));
@@ -37,16 +35,14 @@ public class Util {
 
     }
 
-
     public void populateMerkleNode(MerkleNode oNode, MerkleNode oLeftNode, MerkleNode oRightNode){
+
         oNode.oLeft = oLeftNode;
         oNode.oRight = oRightNode;
         oNode.sHash = generateHash(oNode.oLeft.sHash + oNode.oRight.sHash);
     }
 
-
-
-    public synchronized String generateHash(String sOriginal){
+    public synchronized String generateHash(String sOriginal) {
         try {
             MessageDigest digest = MessageDigest.getInstance("SHA-256");
             byte[] btEncodedhash = digest.digest(
@@ -57,26 +53,37 @@ public class Util {
                         16).substring(1));
             }
             return sb.toString();
-        }
-        catch(Exception ex){
+        } catch (Exception ex) {
             System.out.println("Error generating hash: " + ex.getMessage());
             return null;
         }
-    }
-    public void sleepRandomTime(String sThreadName){
-    // Gets random number between 0 and 5 and then adds 3, meaning between 3 and 8 now.
-        int iSleepTime = new SecureRandom().nextInt(5) + 3;
-        System.out.println(sThreadName + " sleeping for " + iSleepTime + " seconds.");
-                sleep(iSleepTime);
+
     }
 
-    private void sleep(int iSeconds){
-        try {
+    public String promptUser(String sQuestion) {
+
+        JOptionPane oQuestion = new JOptionPane();
+        String sAnswer = oQuestion.showInputDialog(sQuestion);
+        return sANswer;
+    }
+
+    public void sleepRandomTime(String sThreadName){
+
+        // Gets random number between 0 and 5 and then adds 3, meaning between 3 and 8 now.
+        int iSleepTime = new SecureRandom().nextInt(5) + 3;
+
+        System.out.println(sThreadName + " sleeping for " + iSleepTime + " seconds.");
+        sleep(iSleepTime);
+    }
+
+    private void sleep (int iSeconds){
+
+        try{
             Thread.sleep(iSeconds * 1000);
         }
         catch(Exception ex){
-            //do nothing.
+            // do nothing.
         }
     }
-
 }
+
