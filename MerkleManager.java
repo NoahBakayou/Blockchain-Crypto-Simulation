@@ -6,7 +6,7 @@ public class MerkleManager {
 
 
     public void manage() {
-
+        Util util1 = new Util();
 
         //https://www.w3resource.com/java-tutorial/java-defining-instantiating-and-starting-threads.php
         //instantiate
@@ -23,18 +23,18 @@ public class MerkleManager {
         rogueThread.start();
         monitorThread.start();
 
-        Util util1 = new Util();
 
         while (true) {
 
-            MerkleManager.userEnteredWord = Util.promptUser("Enter the word here: "); //need prompt user method in Util
+            MerkleManager.userEnteredWord = util1.promptUser("Enter the word: "); //need prompt user method in Util
         }
     }
 
     public static synchronized String grabWord() {
 
 
-        String temp = userEnteredWord = null; //means user entered word is set to strign temp which == null
+        String temp = userEnteredWord = null; //means user entered word is set to string
+        // temp which == null
 
         return temp; //returns string
 

@@ -64,7 +64,7 @@ public class Util {
 
         JOptionPane oQuestion = new JOptionPane();
         String sAnswer = oQuestion.showInputDialog(sQuestion);
-        return sANswer;
+        return sAnswer;
     }
 
     public void sleepRandomTime(String sThreadName){

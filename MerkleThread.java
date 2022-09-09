@@ -8,11 +8,11 @@ public class MerkleThread implements Runnable{
 
 
     public void run(){
-        lstWords = new ArrayList();
+        lstWords = new ArrayList<>();
 
         while(true){
             Util oUtil = new Util();
-            oUtil.sleepRandomTime(MerkleThread);
+            oUtil.sleepRandomTime("MerkleThread");
             String sNewWord = MerkleManager.grabWord();
             if(sNewWord!=null)
             {
@@ -21,7 +21,7 @@ public class MerkleThread implements Runnable{
 
                 if(lstWords.size() == iMerkleTreeInputs)
                 {
-                    MerkleManager.sMerkleRoot = oUtil.getMerkleRoot(lstWords);
+                    MerkleManager.merkleRoot = oUtil.getMerkleRoot(lstWords);
                 }
             }
 
