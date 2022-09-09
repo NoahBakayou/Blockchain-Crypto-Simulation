@@ -1,8 +1,8 @@
 public class MerkleManager {
     public static volatile String userEnteredWord; //value of variable must never be cached
-    public static String userEnteredExpectedMerkleRoot;
-    public static String merkleRoot = null;
-    public static int strikes = 0;
+    public static String expectedMerkleRoot;
+    public static String actualMerkleRoot = null;
+    public static int iStrikes = 0;
 
 
     public void manage() {

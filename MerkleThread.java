@@ -21,7 +21,7 @@ public class MerkleThread implements Runnable{
 
                 if(lstWords.size() == iMerkleTreeInputs)
                 {
-                    MerkleManager.merkleRoot = oUtil.getMerkleRoot(lstWords);
+                    MerkleManager.actualMerkleRoot = oUtil.getMerkleRoot(lstWords);
                 }
             }
 

@@ -16,7 +16,7 @@ public class MonitorThread implements Runnable {
                 System.out.println("\nExiting app...");
                 System.exit(0);
             }
-            if (MerkleManager.strikeCount == 3) {
+            if (MerkleManager.iStrikes == 3) {
                 System.out.println("*** THREE STRIKES: *** YOU'RE OUT! ***");
                 System.out.println("\nExiting app...");
                 System.exit(0);
