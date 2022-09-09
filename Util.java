@@ -72,7 +72,7 @@ public class Util {
         // Gets random number between 0 and 5 and then adds 3, meaning between 3 and 8 now.
         int iSleepTime = new SecureRandom().nextInt(5) + 3;
 
-        System.out.println(sThreadName + " sleeping for " + iSleepTime + " seconds.");
+        System.out.println(sThreadName + " is sleeping for " + iSleepTime + " seconds.");
         sleep(iSleepTime);
     }
 

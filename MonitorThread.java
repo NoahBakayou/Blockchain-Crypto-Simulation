@@ -5,7 +5,8 @@ public class MonitorThread implements Runnable {
     public void run() {
         while (true) {
             if (MerkleManager.actualMerkleRoot != null) {
-                if (MerkleManager.expectedMerkleRoot.equals(MerkleManager.actualMerkleRoot)) {
+
+                if (MerkleManager.actualMerkleRoot.equals(MerkleManager.expectedMerkleRoot)) {
                     System.out.println("**** YOU WIN **** " + MerkleManager.actualMerkleRoot);
                 }
                 else {

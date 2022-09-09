@@ -23,6 +23,8 @@ public class MerkleManager {
         rogueThread.start();
         monitorThread.start();
 
+        String sQuestion0 = "Enter expected merkle root (use https://xorbin.com/tools/sha256-hash-calculator): ";
+        expectedMerkleRoot = util1.promptUser(sQuestion0);
 
         while (true) {
 
