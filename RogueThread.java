@@ -1,12 +1,12 @@
 public class RogueThread implements Runnable{
 
-    String threadName;
+
 
     public void run() {
         Util oUtil = new Util();
         MerkleManager oMerkleManager = new MerkleManager();
         while(true) {
-            oUtil.sleepRandomTime(threadName);
+            oUtil.sleepRandomTime("Rogue Thread");
             String sNewWord = MerkleManager.grabWord();
             if(sNewWord != null) {
                 MerkleManager.iStrikes++;
@@ -15,4 +15,3 @@ public class RogueThread implements Runnable{
         }
     }
 }
-
