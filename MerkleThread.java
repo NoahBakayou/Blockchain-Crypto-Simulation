@@ -8,10 +8,10 @@ public class MerkleThread implements Runnable{
 
 
     public void run(){
+        Util oUtil = new Util();
         lstWords = new ArrayList<>();
 
         while(true){
-            Util oUtil = new Util();
             oUtil.sleepRandomTime("Merkle Thread");
             String sNewWord = MerkleManager.grabWord();
             if(sNewWord!=null)
