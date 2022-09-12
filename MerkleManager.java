@@ -35,11 +35,11 @@ public class MerkleManager {
     public static synchronized String grabWord() {
 
 
-        String temp = userEnteredWord = null; //means user entered word is set to string
+        String temp = userEnteredWord;
+        userEnteredWord = null; //means user entered word is set to string
         // temp which == null
 
         return temp; //returns string
 
     }
-
 }
