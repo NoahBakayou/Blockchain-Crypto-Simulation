@@ -12,7 +12,7 @@ public class MerkleThread implements Runnable{
 
         while(true){
             Util oUtil = new Util();
-            oUtil.sleepRandomTime("MerkleThread");
+            oUtil.sleepRandomTime("Merkle Thread");
             String sNewWord = MerkleManager.grabWord();
             if(sNewWord!=null)
             {
