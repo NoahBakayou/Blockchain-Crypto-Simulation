@@ -8,6 +8,7 @@ public class MerkleManager {
     public void manage() {
         Util util1 = new Util();
 
+        //reference website
         //https://www.w3resource.com/java-tutorial/java-defining-instantiating-and-starting-threads.php
         //instantiate
         MerkleThread instanceMerkle = new MerkleThread();
