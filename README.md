@@ -1,11 +1,20 @@
-# Project Description: Lab_2_CSIS_294
+# Merkle Madness
+
+## Index
+1. [Visual_Project_Description](#visual-project-descritipon)
+1. [Project Overview](#project-overview)
+2. [Project Summary](#project-summary)
+3. [Project Details](#project-details)
+4. [Key Methods and Responsibilities](#key-methods-and-responsibilities)
+
+## Visual Project Descritipon:
 
 ![blockchain](https://github.com/NoahBakayou/MerkleConquestCS294/assets/100172278/69067d51-e6bf-457d-8ebf-99ce73337b4b)
 ![blockchain2](https://github.com/NoahBakayou/MerkleConquestCS294/assets/100172278/76f98085-ecc4-47de-bd29-321a93543524)
 
 ## Project Overview
 
-This collaborative project done with my peers provides hands-on coding experience with multithreading and Merkle roots. It serves as an opportunity to reinforce essential skills related to SHA256 Hashing, Merkle trees, and Multithreading, all of which were covered in class.
+This collaborative project provides hands-on coding experience with multithreading and Merkle roots. It serves as an opportunity to reinforce essential skills related to SHA256 Hashing, Merkle trees, and Multithreading, all of which were covered in class.
 
 ## Project Summary
 
