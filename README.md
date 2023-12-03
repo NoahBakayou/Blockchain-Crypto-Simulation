@@ -14,7 +14,7 @@
 
 ## Project Overview
 
-This collaborative project provides hands-on coding experience with multithreading and Merkle roots. It serves as an opportunity to reinforce essential skills related to SHA256 Hashing, Merkle trees, and Multithreading, all of which were covered in class.
+This collaborative project provides hands-on coding experience with multithreading and Merkle roots. It serves as an opportunity to reinforce essential skills related to SHA256 Hashing, Merkle trees, and Multithreading.
 
 ## Project Summary
 
