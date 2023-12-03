@@ -1,8 +1,8 @@
 # Lab_2_CSIS_294
 
-Simple group project to get coding experience with multithreading and Merkle roots.
+### Project to get coding experience with multithreading and Merkle roots.
 
-Skills covered in this lab that were reviewed in class:
+### Skills covered in this lab that were reviewed in class:
 
 • SHA256 Hashing • Merkle trees • Multithreading
 
@@ -132,6 +132,5 @@ Inside the try, sleep the thread, which means you must multiply the int variable
 
 No need to do anything in catch statement, just as demoed in class.
 
-TURNING IN GROUP LAB:
-
-a. DON’T forget to have group member names at top of MekleManager_Test java file. b. You are turning in the following 10/11 files as a group submission: i. Java files: All 7 .java files. ii. Group Member files: Each person writes at least a paragraph in a separate doc on which part was the most challenging part of the code for them and why. Each member’s file is included along with the group submission. c. IMPORTANT: DO NOT ZIP your folders/files and DO NOT turn in .class files please.
+![blockchain](https://github.com/NoahBakayou/MerkleConquestCS294/assets/100172278/69067d51-e6bf-457d-8ebf-99ce73337b4b)
+![blockchain2](https://github.com/NoahBakayou/MerkleConquestCS294/assets/100172278/76f98085-ecc4-47de-bd29-321a93543524)
